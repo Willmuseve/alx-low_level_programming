@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * Main does the printing
- * Return, returns 0 since it is not an integer*/
+ * Main - Prints the given phrase
+ * Return: returns 0 if exited properl, non-zero if not
+ */
 
 int main(void)
 {	
