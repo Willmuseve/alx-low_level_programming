@@ -11,7 +11,7 @@ int main (void)
 
 	for (will = 0; will < 100; will++)
 	{
-		purchar(will + '0');
+		putchar(will + '0');
 		if (will < 99)
 		{
 			putchar(',');
