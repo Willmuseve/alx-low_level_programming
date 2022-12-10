@@ -16,10 +16,11 @@ int main(void)
 		putchar(nah + '0');
 		nah++;
 	}
-	while (will <= "f\n")
+	while (will <= 'f')
 	{
 		putchar(will);
 		will++;
 	}
+	putchar('\n');
 	return (0);
 }
