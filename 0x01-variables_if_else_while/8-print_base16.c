@@ -16,7 +16,7 @@ int main(void)
 		putchar(nah + '0');
 		nah++;
 	}
-	while (will <= 'f')
+	while (will <= 'g')
 	{
 		putchar(will);
 		will++;
