@@ -1,46 +1,22 @@
 #include <stdlib.h>
-<<<<<<< HEAD
-#include <stdio.h>
-=======
-
->>>>>>> b8982cf8d2e9520191bb0b37dced5845ec1d67f5
 #include <time.h>
-
-/* more headers goes there */
-
-
-
-/* betty style doc for function main goes there */
-
+#include <stdio.h>
+/**
+ * main - main block
+ * Description: Get a random number and print the number
+ * and if its positive or negative or just zzero
+ * Return: return 0
+ */
 int main(void)
-
 {
-<<<<<<< HEAD
 	int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n < 0)
-		printf("%i is negative\n", n)
-	else if (n > 0)
-		printf("%i is positive\n", n)
+	if (n > 0)
+		printf("%i is positive\n", n);
+	else if (n < 0)
+		printf("%i is negative\n", n);
 	else
-		printf("%i is zero")
-					/* your code goes there */
-
+		printf("%i is zero\n", n);
 	return (0);
-=======
-
-		int n;
-
-
-
-			srand(time(0));
-
-				n = rand() - RAND_MAX / 2;
-
-					/* your code goes there */
-
-					return (0);
->>>>>>> b8982cf8d2e9520191bb0b37dced5845ec1d67f5
-
 }
