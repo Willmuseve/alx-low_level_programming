@@ -11,15 +11,15 @@ int main(void)
 
 	int nah;
 
-	while (nah < 10)
-	{	
+	while (nah <= 9)
+	{
 		putchar(nah + '0');
-		nah++;
+		nah++
 	}
 	while (will <= 'f')
 	{
 		putchar(will);
-		will++;
+		will++
 	}
 	return (0);
 }
