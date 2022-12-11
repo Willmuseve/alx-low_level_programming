@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	int = m;
-	int = w;
+	int m;
+	int w;
 
 	for (m = 0; m <= 9; m++;)
 	{
