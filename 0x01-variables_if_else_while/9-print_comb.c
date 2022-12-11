@@ -5,14 +5,14 @@
  *  of single-digit numbers.
  *  Return: 0
  */
-int main (void)
+int main(void)
 {
 	int will;
 
-	for (will = 0; will < 100; will++)
+	for (will = 0; will < 10; will++)
 	{
 		putchar(will + '0');
-		if (will < 99)
+		if (will < 9)
 		{
 			putchar(',');
 			putchar(' ');
