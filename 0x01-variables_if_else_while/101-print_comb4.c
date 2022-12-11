@@ -5,7 +5,7 @@
  *  combinations of three digits.
  *  Return: return 0
  */
-int main (void)
+int main(void)
 {
 	int l;
 	int n;
@@ -24,7 +24,7 @@ int main (void)
 						putchar(l);
 						putchar(n);
 						putchar(j);
-						if(l == 55 && n == 56 && j == 57)
+						if (l == 55 && n == 56 && j == 57)
 						{
 							break;
 						}
