@@ -11,7 +11,6 @@ int main(void)
 	int n;
 	int j;
 
-	
 	while (j < 10)
 	{
 		n = 0;
@@ -20,7 +19,7 @@ int main(void)
 			l = 0;
 			while (l < 10)
 			{
-				if (l !=n && n != j && j < n && n < l)
+				if (l != n && n != j && j < n && n < l)
 				{
 					putchar('0' + j);
 					putchar('0' + n);
@@ -40,4 +39,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-}	
+}
