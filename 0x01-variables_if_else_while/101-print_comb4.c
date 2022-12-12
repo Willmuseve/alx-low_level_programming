@@ -11,32 +11,33 @@ int main(void)
 	int n;
 	int j;
 
-	for (l = 48; l < 58; l++)
+	
+	while (j < 10)
 	{
-		for (n = 48; n < 58; n++)
+		n = 0;
+		while (n < 10)
 		{
-			if (n > l)
+			l = 0;
+			while (l < 10)
 			{
-				for (j = 48; j < 58; j++)
+				if (l !=n && n != j && j < n && n < l)
 				{
-					if (j > n)
+					putchar('0' + j);
+					putchar('0' + n);
+					putchar('0' + l);
+					if (l + n + j != 9 + 8 + 7)
 					{
-						putchar(l);
-						putchar(n);
-						putchar(j);
-						if (l == 55 && n == 56 && j == 57)
-						{
-							break;
-						}
-
 						putchar(',');
 						putchar(' ');
 					}
 				}
+				l++;
+
 			}
+			n++;
 		}
+		j++;
 	}
 	putchar('\n');
 	return (0);
-}
-
+}	
