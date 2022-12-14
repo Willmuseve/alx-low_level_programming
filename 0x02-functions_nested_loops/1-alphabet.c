@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * main - print_alphabet
- * print_alphabet - checks the code
+ * print_alphabet - entry point
  * Return: always 0,
  */
 void print_alphabet(void)
