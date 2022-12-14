@@ -6,7 +6,7 @@
  * @w: print int w
  * Return: always 0
  */
-int add(int m , int w)
+int add(int m, int w)
 {
 	return (m + w);
 }
