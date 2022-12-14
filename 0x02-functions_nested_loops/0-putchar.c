@@ -1,17 +1,8 @@
 #include "main.h"                                                
-
-                                                                 
-
-/***                                                             
- *
- *  * main - prints putchar followed by a new line                  
- *
- *   * Return: returns 0                                             
- *
- *    */                                                              
-
-                                                                 
-
+/*
+ * main - prints putchar followed by a new line
+ * Return: returns 0
+ */ 
 int main(void)                                                 
 {                                             
 
