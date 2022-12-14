@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - main block
  * Description: a program that finds and prints the sum of
