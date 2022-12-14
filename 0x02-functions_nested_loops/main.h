@@ -1,4 +1,5 @@
 #define MAIN_H_INCLUDED
+#ifndef MAIN_H
 
 void print_alphabet(void);
 
