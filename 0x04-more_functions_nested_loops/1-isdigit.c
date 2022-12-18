@@ -9,13 +9,13 @@
 
 int _isdigit(int c)
 {
-	for (c =0; c < 10; c++)
+	while (c < 10)
 	{
-		if (c < 10 && c > 10)
+		if (( c >= 0) && ( c <= 9))
 		{
 			return (1);
 		}
-		else
+		else 
 		{
 			return (0);
 		}
