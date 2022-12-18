@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * isupper - checks upper case
+ * _isupper - checks upper case
  *@c: print int
  * Return: Always 0.
  */
