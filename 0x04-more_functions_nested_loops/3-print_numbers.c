@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_numbers - prints numbers
- * Returns: retur 0
+ * Return: return 0
  */
 void print_numbers(void)
 {
