@@ -8,7 +8,7 @@ int main(void)
 	int i;
 	int p = 100;
 
-	i = i;
+	i = 1;
 	while (i <= p)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
