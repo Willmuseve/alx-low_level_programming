@@ -12,11 +12,11 @@ void puts2(char *str)
 	{
 		if (str[c] == '\0')
 		{
-			putchar('\n');
+			_putchar('\n');
 			break;
 		}
 		if (c % 2 == 0)
-			putchar(str[c]);
+			_putchar(str[c]);
 		c++;
 	}
 }
