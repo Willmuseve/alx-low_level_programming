@@ -17,7 +17,7 @@ int _atoi(char *s);
 void _putchar(char c);
 int _putchar(char);
 int _putchar(char c);
-int _putchar(int c)
+int _putchar(int c);
 int _putchar();
 
 #endif
