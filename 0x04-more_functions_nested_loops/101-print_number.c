@@ -39,7 +39,7 @@ void print_number(int n)
 	}
 	for (j = 0; j < e; j++)
 	{
-		_putchar(w = w % p + '0');
+		_putchar(w = w / p + '0');
 		w = w % p;
 		p = p / 10;
 	}
