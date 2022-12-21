@@ -6,31 +6,26 @@
 int main(void)
 {
 	int i;
-	int p = 100;
-
-	i = 1;
-	while (i <= p)
+	
+	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
-			printf("fizzBuzz");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		else if (i % 5 == 0)
-		{
-			if  (i < p)
-			printf("Buzz ");
-			else
+			if (i % 3 == 0)
+			{
+				printf("Fizz");
+			}
+			if (i % 5 == 0)
+			{
 				printf("Buzz");
+			}
 		}
 		else
 		{
-			printf("%i ", i);
+			print("%d", i);
 		}
-		i++;
+		if (i != 100)
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
