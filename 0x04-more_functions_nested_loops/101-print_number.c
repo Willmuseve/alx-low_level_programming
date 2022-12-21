@@ -13,6 +13,7 @@ void print_number(int n)
 	unsigned int m = n;
 	unsigned int w = n;
 	int e = 0;
+
 	if (n == 0)
 	{
 		_putchar('0');
