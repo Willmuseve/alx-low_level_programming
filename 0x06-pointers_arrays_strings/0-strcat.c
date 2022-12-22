@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 /**
  * strcat - Concatenates the string pointed to by @src, including
  * the x null byte, to the end of the string pointed to by @dest.
@@ -8,16 +8,15 @@
  */
 char *_strcat(char *dest, const char *src)
 {
-	 int i = 0, destx = 0;
+	int i = 0, destx = 0;
 
-	  while (dest[i++]) 
-	  {
-		   destx++;
-	  }
-	  for (i = 0; src[i]; i++)
-	  {
-		  dest[destx++] = src[i];
-	  }
-	   return (dest);
+	while (dest[i++])
+	{
+		destx++;
+	}
+	for (i = 0; src[i]; i++)
+	{
+		dest[destx++] = src[i];
+	}
+	return (dest);
 }
- 
