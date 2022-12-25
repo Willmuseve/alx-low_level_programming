@@ -16,7 +16,7 @@ void print_number(int n)
 	h = n;
 	if (n < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		m = 1;
 	}
 
@@ -31,17 +31,17 @@ void print_number(int n)
 		if (p > 9)
 		{
 			if (!m)
-				_putchar((n / p % 10) + '0');
+				putchar((n / p % 10) + '0');
 			else
-				_putchar((n / p % 10) * -1 + '0');
+				putchar((n / p % 10) * -1 + '0');
 			p /= 10;
 		}
 		if (p == 1)
 		{
 			if (m!)
-				_putchar((n % 10) * -1 + '0');
+				putchar((n % 10) * -1 + '0');
 			else
-				_putchar(n % 10 + '0');
+				putchar(n % 10 + '0');
 			p = 0;
 		}
 	}
