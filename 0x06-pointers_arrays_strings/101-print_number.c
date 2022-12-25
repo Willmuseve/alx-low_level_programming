@@ -38,7 +38,7 @@ void print_number(int n)
 		}
 		if (p == 1)
 		{
-			if (m!)
+			if (!m)
 				putchar((n % 10) * -1 + '0');
 			else
 				putchar(n % 10 + '0');
