@@ -9,13 +9,13 @@
 void print_diagsums(int *a, int size)
 {
 	int i;
-	int a = 0;
+	int c = 0;
 	int b = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		a += a[(i * size) + i];
+		c += a[(i * size) + i];
 		b += a[(size - 1) + ((size - 1) * i)];
 	}
-	printf("%d, %d\n", a, b);
+	printf("%d, %d\n", c, b);
 }
