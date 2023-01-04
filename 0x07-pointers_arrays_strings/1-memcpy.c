@@ -5,6 +5,7 @@
  * @dest: source string
  * @src: string for filling
  * @n: length of buffer
+ * Return: returns a pointer to dest or nothing
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
