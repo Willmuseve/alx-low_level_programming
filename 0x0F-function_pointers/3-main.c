@@ -1,27 +1,43 @@
-#include "function_pointers.h"
+#include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
- * int_index - Searches for an integer in an array of integers.
- * @array: The array of integers.
- * @size: The size of the array.
- * @cmp: A pointer to the function to be used to compare values.
+ * main - Prints the result of simple operations.
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
  *
- * Return: If no element matches or size <= 0 - -1.
- *         Otherwise - The index of the first element for which
- *                     the cmp function does not return 0.
+ * Return: Always 0.
  */
-int int_index(int *array, int size, int (*cmp)(int))
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	int index;
+	int num1, num2;
+	char *op;
 
-	if (array == NULL || cmp == NULL)
-		return (-1);
-
-	for (index = 0; index < size; index++)
+	if (argc != 4)
 	{
-		if (cmp(array[index]) != 0)
-			return (index);
+		printf("Error\n");
+		exit(98);
 	}
 
-	return (-1);
+	num1 = atoi(argv[1]);
+	op = argv[2];
+	num2 = atoi(argv[3]);
+
+	if (get_op_func(op) == NULL || op[1] != '\0')
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	if ((*op == '/' && num2 == 0) ||
+	    (*op == '%' && num2 == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	printf("%d\n", get_op_func(op)(num1, num2));
+
+	return (0);
 }
