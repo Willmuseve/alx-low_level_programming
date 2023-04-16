@@ -118,7 +118,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 }
 
 /**
- * shash_table_get - will retrieve a value 
+ * shash_table_get - will retrieve a value
  * @ht: A pointer to the sorted hash table.
  * @key: The key.
  *
@@ -146,7 +146,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 
 /**
  * shash_table_print - Prints a sorted hash table in order.
- * @ht: A pointer 
+ * @ht: A pointer
  */
 void shash_table_print(const shash_table_t *ht)
 {
