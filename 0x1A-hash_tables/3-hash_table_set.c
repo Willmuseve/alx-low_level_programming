@@ -3,9 +3,8 @@
 /**
  * hash_table_set - update an element in a hash table.
  * @ht: A pointer.
- * @key: The key 
- * @value: The value 
- *
+ * @key: The key
+ * @value: The value
  * Return: 0 or -1.
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
