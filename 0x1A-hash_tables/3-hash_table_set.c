@@ -8,42 +8,43 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int s;
-	hash_node_t *checker, *n;
+	hash_node_t *new;
+	char *value_copy;
+	unsigned long int x, y;
 
-	if (!ht || !ht->size || !strlen(key))
+	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
-	position = key_index((const unsigned char *)key, ht->size);
-	checker = ht->array[s];
-	while (checker)
+
+	value_copy = strdup(value);
+	if (value_copy == NULL)
+		return (0);
+
+	x = key_index((const unsigned char *)key, ht->size);
+	for (y = x; ht->array[y]; y++)
 	{
-		if (!strcmp(checker->key, key))
+		if (strcmp(ht->array[y]->key, key) == 0)
 		{
-			free(checker->value);
-			checker->value = strdup((char *)value);
-			if (!checker->value)
-				return (0);
+			free(ht->array[y]->value);
+			ht->array[y]->value = value_copy;
 			return (1);
 		}
-		checker = checker->next;
 	}
-	n = malloc(sizeof(hash_node_t));
-	if (!n)
-		return (0);
-	n->key = strdup((char *)key);
-	if (!n->key)
+
+	new = malloc(sizeof(hash_node_t));
+	if (new == NULL)
 	{
-		free(n);
-		exit(0);
-	}
-	n->value = strdup((char *)value);
-	if (!n->value)
-	{
-		free(n->value);
-		free(n);
+		free(value_copy);
 		return (0);
 	}
-	n->next = ht->array[s];
-	ht->array[s] = n;
+	new->key = strdup(key);
+	if (new->key == NULL)
+	{
+		free(new);
+		return (0);
+	}
+	new->value = value_copy;
+	new->next = ht->array[x];
+	ht->array[x] = new;
+
 	return (1);
 }
