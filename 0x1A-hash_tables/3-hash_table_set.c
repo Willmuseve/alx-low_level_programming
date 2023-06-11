@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * hash_table_set - adds all 
+ * hash_table_set - adds all
  * @ht: hash table
  * @key: key to be added
  * @value: value associated with the key
