@@ -20,7 +20,7 @@ size_t min(size_t a, size_t b)
  * a jump search algorithm
  * @array: pointer to first elem of array
  * @size: number of elements in array
- * @value: value to search 
+ * @value: value to search
  * Return: first index containing `value`, or -1 if `value` not found
  */
 
@@ -40,7 +40,6 @@ int jump_search(int *array, size_t size, int value)
 		       high, array[high]);
 	}
 
-	/* causes 'found' msg even when value not in array */
 	printf("Value found between indexes [%lu] and [%lu]\n", low, high);
 
 	for (; low <= min(high, size - 1); low++)
