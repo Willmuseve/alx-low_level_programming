@@ -10,6 +10,7 @@
  * Description: Prints a value every time it is compared in the list.
  * Uses the square root of the list size as the jump step.
  */
+
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
 	size_t step, step_size;
@@ -33,9 +34,9 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 
 	printf("Value found between indexes [%ld] and [%ld]\n",
 			nod->index, jump->index);
-	for (; nod->index < jump->index && node->n < value; nod = nod->next)
+	for (; nod->index < jump->index && nod->n < value; nod = nod->next)
 		printf("Value checked at index [%ld] = [%d]\n", nod->index, nod->n);
-	printf("Value checked at index [%ld] = [%d]\n", node->index, nod->n);
+	printf("Value checked at index [%ld] = [%d]\n", nod->index, nod->n);
 
 	return (nod->n == value ? nod : NULL);
 }
