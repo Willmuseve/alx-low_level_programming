@@ -23,7 +23,7 @@ size_t min(size_t a, size_t b)
  * @value: value to search for
  * @low: starting index
  * @high: ending index
- * Return: index containing `value`, or -1 if `value` not found 
+ * Return: index containing `value`, or -1 if `value` not found
  */
 
 int binary_search_helper(int *array, int value,
@@ -57,7 +57,7 @@ int binary_search_helper(int *array, int value,
  * @array: pointer to first element of array to search
  * @size: number of elements in array
  * @value: value to search for
- * Return: first index containing `value`, or -1 if `value` not found 
+ * Return: first index containing `value`, or -1 if `value` not found
  */
 
 int exponential_search(int *array, size_t size, int value)
